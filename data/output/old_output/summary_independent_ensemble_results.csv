@@ -1,0 +1,10 @@
+,dataset,ensemble_6,ensemble_16,ensemble_60
+0,cardio,0.9532,0.9533,0.9578
+1,gas_drift,0.994,0.9944,0.9944
+2,satellite,0.8747,0.8741,0.879
+3,magic_telescope,0.9963,0.9968,0.9971
+4,pendigits,0.9998,0.9999,0.9999
+5,phoneme,0.8127,0.851,0.8537
+6,pollen,0.5002,0.5071,0.5134
+7,speech,0.5474,0.5611,0.5555
+8,waveform,0.8227,0.8252,0.8277

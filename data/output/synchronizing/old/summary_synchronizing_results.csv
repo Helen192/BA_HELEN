@@ -1,0 +1,10 @@
+,dataset,synchronizing_5,synchronizing_10,synchronizing_15,synchronizing_30
+0,cardio,0.9482,0.0,0.0,0.0
+1,gas_drift,0.9938,0.0,0.0,0.0
+2,satellite,0.8406,0.8501,0.0,0.0
+3,magic_telescope,0.9827,0.0,0.0,0.0
+4,pendigits,0.9998,0.0,0.0,0.0
+5,phoneme,0.6822,0.7476,0.7116,0.7377
+6,pollen,0.4955,0.4907,0.4848,0.4864
+7,speech,0.5681,0.0,0.0,0.0
+8,waveform,0.8103,0.0,0.0,0.0

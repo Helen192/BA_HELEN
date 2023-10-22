@@ -1,0 +1,10 @@
+,dataset,fullsequential_16,fullsequential_60,new_fullseq60,unoptimal_fullsequential,ensemble_10FullSequentials
+0,cardio,0.9572,0.9572,0.9436,0.9389,0.9477
+1,gas_drift,0.9944,0.9934,0.9926,0.9861,0.9943
+2,satellite,0.8732,0.8749,0.8744,0.8443,0.8577
+3,magic_telescope,0.9964,0.9971,0.9969,0.9818,0.9973
+4,pendigits,0.9998,0.9998,0.9998,0.9951,0.9993
+5,phoneme,0.8313,0.8385,0.8324,0.7295,0.8179
+6,pollen,0.5045,0.5165,0.5103,0.495,0.5027
+7,speech,0.5614,0.5671,0.5517,0.5625,0.5829
+8,waveform,0.8286,0.8216,0.8113,0.8113,0.8205

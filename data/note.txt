@@ -1,0 +1,32 @@
+1. After inspecting the correlation between latent space and AUC score, I see that, the latent space of Autoencoder does not need
+    to be smaller than the number of feature. A dataset with few features can get the highest AUC score by using an autoencoder 
+    with a big latent space.
+    --> we can totally train a good model with only a simple Autoencoder architecture, but it may cause a computation cost to 
+    find out the best latent space for the dataset, if we are not lucky to guess the best one.
+
+2. batch_size affects not so much to the improvement of models. After checking, the best batch_size for all datasets can be 64 
+
+3. the correlation between latent and epochs (like the last conclusion)
+
+4. 
+    4.1. Comparison between Sequential vs. Full Sequential:
+        - Full Sequential models tend to obtain higher AUC scores in most datasets. But the improvement is not significantly high.
+        - So we can consider between using Sequential oder Full Sequential architecture to train a particular dataset. 
+        - Obviously, Full Sequential requires a higher computational cost than Sequential. 
+    4.2. Comparison between Ensemble of Sequential vs. Ensemble of Full Sequential:
+        - Similarly, Ensemble of Full Sequential shows the better AUC scores in most datasets in comparison with ensemble of Sequential.
+        - But the improvement is not actually valuable when it comes to the computational issue. 
+--> Hier is a tradeoff between AUC scores and computational cost. So in most cases, Sequential and ensemble of Sequential can be 
+    a better choice.
+
+5. NOTE: for test_1000epoch va test_2000epoch_synchronizing.csv, alpha=0.5
+
+6. From the heatmap_epoch_latent: by ploting the the heatmap between latent size and epoch size of Autoencoder, we can figure out
+    what is the best combination of two parameters latent size and epoch size, so that our trained autoencoder model can get the 
+    best AUC score. This can be one of the easiest methods to tuning hyperparameters
+
+
+Base 1: LATENT_LIST = [21, 112, 192, 112, 16, 96, 32, 112, 112], epoch=2000, batch=64
+Base 2:  LATENT_LIST = [4, 32, 16, 4, 4, 4, 4, 64, 32], epoch=1000, epoch=1000, batch=64
+Base 3: unoptimal_latent = [4, 16, 16, 4, 4, 4, 4, 256, 32], epoch=1000, batch=64
+Base 4: unoptimal_latent = [4, 16, 16, 4, 4, 4, 4, 256, 32], epochs=300, batch=100
